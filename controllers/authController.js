@@ -1,10 +1,11 @@
 import UserModel from "../models/userModel.js";
 import bcrypt from "bcrypt";
 import JWT from 'jsonwebtoken';
+
 export const ragisterController = async (req, res) => {
     try {
 
-        const { userName, email, password, phone, address ,answer} = req.body;
+        const { userName, email, password, phone, address, answer } = req.body;
         // validation
         if (!userName || !email || !password || !phone || !address || !answer) {
             return res.status(404).send({

@@ -20,10 +20,10 @@ app.use(cors());
 
 //router
 app.use('/api/v1/user', authRoutes)
-app.use('/api/v1/user',userRouters)
-app.use('/api/v1/resturant',resturantRouters)
-app.use('/api/v1/category',categoryRouters)
-app.use('/api/v1/food',foodRouters);
+app.use('/api/v1/user', userRouters)
+app.use('/api/v1/resturant', resturantRouters)
+app.use('/api/v1/category', categoryRouters)
+app.use('/api/v1/food', foodRouters);
 
 
 

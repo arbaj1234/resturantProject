@@ -95,7 +95,6 @@ export const getSingleFoodController = async (req, res) => {
     }
 }
 
-
 export const updateFoodController = async (req, res) => {
     try {
         const foods = await foodModel.findByIdAndUpdate(req.params.id)
